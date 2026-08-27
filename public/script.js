@@ -3,9 +3,52 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initCountdown();
   initLottieAnimation();
   initSubscribeForm();
 });
+
+/* --------------------------------------------------------------------------
+   0. Countdown Timer (Target: Sept 1, 2026 12:00 PM BST / UTC+6)
+   ISO Standard: 2026-09-01T12:00:00+06:00
+   -------------------------------------------------------------------------- */
+function initCountdown() {
+  // Target: September 1, 2026 at 12:00:00 PM Bangladesh Standard Time (UTC+6)
+  const targetDate = new Date("2026-09-01T12:00:00+06:00").getTime();
+
+  const daysEl = document.getElementById("cd-days");
+  const hoursEl = document.getElementById("cd-hours");
+  const minsEl = document.getElementById("cd-mins");
+  const secsEl = document.getElementById("cd-secs");
+
+  if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
+
+  function update() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      daysEl.textContent = "00";
+      hoursEl.textContent = "00";
+      minsEl.textContent = "00";
+      secsEl.textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysEl.textContent = String(days).padStart(2, "0");
+    hoursEl.textContent = String(hours).padStart(2, "0");
+    minsEl.textContent = String(minutes).padStart(2, "0");
+    secsEl.textContent = String(seconds).padStart(2, "0");
+  }
+
+  update();
+  setInterval(update, 1000);
+}
 
 /* --------------------------------------------------------------------------
    1. Lottie Animation Initialization
@@ -120,29 +163,33 @@ function initSubscribeForm() {
    3. React Hot Toast Style Helper
    -------------------------------------------------------------------------- */
 function showToast(message) {
-  const existingToast = document.querySelector('.toast-container');
-  if (existingToast) existingToast.remove();
+  const existing = document.querySelector('.custom-toast');
+  if (existing) existing.remove();
 
   const toast = document.createElement('div');
-  toast.className = 'toast-container';
+  toast.className = 'custom-toast';
   toast.innerHTML = `
-    <div class="toast-content">
-      <div class="toast-icon">
-        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 5L4.5 8.5L11 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <span class="toast-text">${message}</span>
+    <div class="toast-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
     </div>
+    <span class="toast-text">${message}</span>
   `;
+
   document.body.appendChild(toast);
 
+  // Trigger entrance animation
   requestAnimationFrame(() => {
-    toast.classList.add('show');
+    toast.classList.add('toast-show');
   });
 
+  // Auto remove after 3.5s
   setTimeout(() => {
-    toast.classList.remove('show');
-    setTimeout(() => toast.remove(), 350);
+    toast.classList.remove('toast-show');
+    toast.classList.add('toast-hide');
+    setTimeout(() => {
+      toast.remove();
+    }, 400);
   }, 3500);
 }
