@@ -1,709 +1,1282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Primary Meta Tags -->
-  <title>About Labto AI — Autonomous AI Assistant & Commerce Copilot</title>
-  <meta name="title" content="About Labto AI — Autonomous AI Assistant & Commerce Copilot" />
-  <meta name="description" content="Learn about Labto AI: Our mission to empower websites and storefronts with autonomous AI assistants, sub-second RAG search, zero-hallucination policy grounding, and instant integration." />
-  <meta name="keywords" content="About Labto AI, Website AI Assistant, E-Commerce AI Copilot, Shopify AI, WordPress AI, RAG Vector Search, Autonomous Customer Support" />
-  <meta name="author" content="Labto AI" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://labtoai.com/about" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://labtoai.com/about" />
-  <meta property="og:title" content="About Labto AI — Autonomous AI Assistant" />
-  <meta property="og:description" content="Empowering modern websites and storefronts with autonomous AI shopping assistants and customer copilots." />
-  <meta property="og:image" content="https://labtoai.com/og-image.jpg" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/favicon.ico" />
-  <meta name="theme-color" content="#1DBF73" />
-
-  <!-- Google Fonts: Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet" />
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Montserrat', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              DEFAULT: '#1DBF73',
-              hover: '#17a865',
-              light: '#E8F8F1',
-            }
-          }
-        }
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JSX991ZJDX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
-  </script>
-</head>
-<body class="bg-[#F8FAFC] text-[#111827] font-sans antialiased selection:bg-[#1DBF73]/20 selection:text-[#111827]">
+      gtag("js", new Date());
 
-  <!-- Top Sticky Navbar -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E4E5E7] py-3">
-    <div class="w-11/12 lg:w-9/12 max-w-7xl mx-auto flex items-center justify-between gap-4">
-      <a href="/" class="flex items-center gap-2 text-decoration-none group whitespace-nowrap flex-shrink-0">
-        <img src="/favicon.ico" alt="Labto AI Logo" class="w-6 h-6 rounded-md object-contain flex-shrink-0" />
-        <span class="text-base font-semibold text-[#111827] tracking-tight group-hover:text-[#1DBF73] transition whitespace-nowrap">Labto AI</span>
-      </a>
-      <div class="flex items-center">
-        <a href="/" class="text-xs font-medium text-[#62646A] hover:text-[#1DBF73] px-3 py-1.5 rounded-md border border-[#E4E5E7] bg-white transition whitespace-nowrap">
-          ← Back to Teaser
+      gtag("config", "G-JSX991ZJDX", {
+        send_page_view: true,
+      });
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>About Labto AI — Autonomous AI Assistant & Commerce Copilot</title>
+    <meta
+      name="title"
+      content="About Labto AI — Autonomous AI Assistant & Commerce Copilot"
+    />
+    <meta
+      name="description"
+      content="Learn about Labto AI: Our mission to empower websites and storefronts with autonomous AI assistants, sub-second RAG search, zero-hallucination policy grounding, and instant integration."
+    />
+    <meta
+      name="keywords"
+      content="About Labto AI, Website AI Assistant, E-Commerce AI Copilot, Shopify AI, WordPress AI, RAG Vector Search, Autonomous Customer Support"
+    />
+    <meta name="author" content="Labto AI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://labtoai.com/about" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://labtoai.com/about" />
+    <meta
+      property="og:title"
+      content="About Labto AI — Autonomous AI Assistant"
+    />
+    <meta
+      property="og:description"
+      content="Empowering modern websites and storefronts with autonomous AI shopping assistants and customer copilots."
+    />
+    <meta property="og:image" content="https://labtoai.com/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <meta name="theme-color" content="#1DBF73" />
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "Montserrat",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "sans-serif",
+              ],
+            },
+            colors: {
+              brand: {
+                DEFAULT: "#1DBF73",
+                hover: "#17a865",
+                light: "#E8F8F1",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-[#F8FAFC] text-[#111827] font-sans antialiased selection:bg-[#1DBF73]/20 selection:text-[#111827]"
+  >
+    <!-- Top Sticky Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E4E5E7] py-3"
+    >
+      <div
+        class="w-11/12 lg:w-9/12 max-w-7xl mx-auto flex items-center justify-between gap-4"
+      >
+        <a
+          href="/"
+          class="flex items-center gap-2 text-decoration-none group whitespace-nowrap flex-shrink-0"
+        >
+          <img
+            src="/favicon.ico"
+            alt="Labto AI Logo"
+            class="w-6 h-6 rounded-md object-contain flex-shrink-0"
+          />
+          <span
+            class="text-base font-semibold text-[#111827] tracking-tight group-hover:text-[#1DBF73] transition whitespace-nowrap"
+            >Labto AI</span
+          >
         </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content Wrapper -->
-  <main class="w-11/12 lg:w-9/12 max-w-7xl mx-auto py-10 sm:py-14 space-y-16">
-    
-    <!-- Hero Section -->
-    <section class="space-y-4 pb-10 border-b border-[#E4E5E7]">
-      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-[#111827] tracking-tight leading-snug max-w-2xl">
-        Empowering Websites & E-Commerce with Autonomous AI Assistants
-      </h1>
-      <p class="text-[#62646A] text-xs sm:text-sm leading-relaxed max-w-2xl">
-        Labto AI helps online businesses and digital storefronts turn casual visitors into loyal customers. Our autonomous AI copilot answers inquiries accurately, recommends matching catalog items, and closes sales 24/7 with zero latency.
-      </p>
-
-      <!-- Key Metrics -->
-      <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5">
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1">
-          <div class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]">&lt; 1.2s</div>
-          <div class="text-xs text-[#62646A] font-medium">AI Query Latency</div>
-        </div>
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1">
-          <div class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]">1-Min</div>
-          <div class="text-xs text-[#62646A] font-medium">1-Line Script Embed</div>
-        </div>
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1">
-          <div class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]">100%</div>
-          <div class="text-xs text-[#62646A] font-medium">Tenant Data Privacy</div>
-        </div>
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1">
-          <div class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]">24/7</div>
-          <div class="text-xs text-[#62646A] font-medium">Autonomous Operation</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 1: Overview -->
-    <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">01 / Overview</div>
-        <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">What is Labto AI?</h2>
-        <p class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed">
-          Labto AI is a contextual, self-learning AI assistant built specifically for modern websites, software products, and digital commerce.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Traditional Problem -->
-        <div class="p-6 sm:p-8 rounded-md bg-white border border-[#E4E5E7] space-y-3">
-          <div class="w-8 h-8 rounded-md bg-rose-50 text-rose-500 flex items-center justify-center font-bold text-sm">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-[#111827]">Traditional Chatbots & Keyword Search</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            Legacy chatbots rely on exact keyword matches. When visitors ask nuanced questions, traditional search bars fail—forcing users to sift through long documentation or wait hours for email replies.
-          </p>
-        </div>
-
-        <!-- Labto Solution -->
-        <div class="p-6 sm:p-8 rounded-md bg-white border border-[#1DBF73]/30 bg-gradient-to-br from-white to-[#1DBF73]/5 space-y-3">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center font-bold text-sm">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-[#111827]">The Labto AI Solution</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            Labto AI indexes your website content, product catalog, and knowledge base using advanced vector embeddings (RAG). It understands real human intent, recommends products accurately, and provides zero-hallucination answers in real time.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 2: Live Product Showcase Slider (Auto-plays, Pauses on Hover) -->
-    <section class="space-y-6 pb-12 border-b border-[#E4E5E7]">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-        <div class="space-y-2">
-          <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">02 / Live Experience</div>
-          <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">See Labto AI in Action</h2>
-          <p class="text-xs sm:text-sm text-[#62646A] max-w-xl leading-relaxed">
-            Explore how our autonomous AI assistant interacts, reasons, and drives conversions directly on your live website. (Hover over slider to pause)
-          </p>
-        </div>
-
-        <!-- Slider Arrow Controls -->
-        <div class="flex items-center gap-2">
-          <button id="slider-prev" class="w-8 h-8 rounded-md border border-[#E4E5E7] bg-white hover:border-[#1DBF73] hover:text-[#1DBF73] text-[#62646A] flex items-center justify-center transition cursor-pointer" title="Previous Slide">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-          </button>
-          <button id="slider-next" class="w-8 h-8 rounded-md border border-[#E4E5E7] bg-white hover:border-[#1DBF73] hover:text-[#1DBF73] text-[#62646A] flex items-center justify-center transition cursor-pointer" title="Next Slide">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Quick Feature Tabs -->
-      <div class="flex flex-wrap items-center gap-2 pt-1" id="slider-tabs">
-        <button data-slide="0" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#1DBF73] bg-[#E8F8F1] text-[#1DBF73] transition cursor-pointer">
-          01. Smart Onboarding
-        </button>
-        <button data-slide="1" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer">
-          02. AI Reasoning & Streaming
-        </button>
-        <button data-slide="2" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer">
-          03. Knowledge Grounding
-        </button>
-        <button data-slide="3" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer">
-          04. Autonomous Commerce
-        </button>
-      </div>
-
-      <!-- Showcase Slider Container (Hover to Pause) -->
-      <div id="showcase-slider" class="relative overflow-hidden rounded-md bg-white border border-[#E4E5E7] p-6 sm:p-8 lg:p-10 transition">
-        
-        <!-- Slide 1: Instant Greeting -->
-        <div class="showcase-slide flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
-          <div class="w-full lg:w-1/2 space-y-4 text-left">
-            <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
-              Feature 01 · Smart Onboarding
-            </div>
-            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
-              Instant Greeting & Contextual Shortcuts
-            </h3>
-            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-              Visitors receive customizable question chips the moment they open chat, eliminating blank-screen hesitation and prompting instant engagement.
-            </p>
-            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Customizable starter question chips for your brand</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Zero typing required for immediate visitor interaction</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Instant automated greeting tailored to store tone</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-greeting.png" alt="Instant Greeting & Suggestion Chips" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
-          </div>
-        </div>
-
-        <!-- Slide 2: Streaming & Reasoning -->
-        <div class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
-          <div class="w-full lg:w-1/2 space-y-4 text-left">
-            <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
-              Feature 02 · Sub-Second Latency
-            </div>
-            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
-              Real-Time Streaming & AI Reasoning
-            </h3>
-            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-              Sub-second response streaming with visible thinking indicators keeps shoppers engaged while delivering deep, intelligent answers without lag.
-            </p>
-            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Sub-1.2s first token latency across all queries</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Visible live thinking states for total transparency</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Smooth token-by-token conversational streaming</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-reasoning.png" alt="Real-Time Streaming & Reasoning" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
-          </div>
-        </div>
-
-        <!-- Slide 3: Knowledge Grounding & Smart Actions -->
-        <div class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
-          <div class="w-full lg:w-1/2 space-y-4 text-left">
-            <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
-              Feature 03 · Zero Hallucination
-            </div>
-            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
-              Deep Knowledge Grounding & Action Links
-            </h3>
-            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-              Grounded exclusively in your company documents and store policies, providing direct clickable links to pages, contact forms, and resources.
-            </p>
-            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Strict policy verification with zero fake promises</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>In-chat clickable action buttons to relevant pages</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Multi-turn conversational context retention</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-knowledge.png" alt="Deep Knowledge Grounding" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
-          </div>
-        </div>
-
-        <!-- Slide 4: In-Chat Product Options & Cart -->
-        <div class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
-          <div class="w-full lg:w-1/2 space-y-4 text-left">
-            <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
-              Feature 04 · Autonomous Commerce
-            </div>
-            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
-              Interactive Product Modals & 1-Click Cart
-            </h3>
-            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-              Customers can pick size, color variants, and quantity directly inside the chat interface and add items straight to their shopping cart.
-            </p>
-            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Direct variant selector for sizes, colors, and quantity</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>1-click cart injection without leaving the chat</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
-                <span>Direct checkout boost for e-commerce conversion</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-ecommerce.png" alt="In-Chat Shopping & Cart" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Section 3: Key Capabilities -->
-    <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">03 / Capabilities</div>
-        <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">Key Features & Architecture</h2>
-        <p class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed">
-          Everything required to automate customer support, personalize shopping, and scale operations without increasing headcount.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Card 1 -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-            </svg>
-          </div>
-          <h3 class="text-base font-semibold text-[#111827]">Autonomous Knowledge Base</h3>
-          <p class="text-xs text-[#62646A] leading-relaxed">
-            Syncs website URLs, PDF manuals, and FAQs to build a context-aware RAG vector search database with sub-second retrieval.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <path d="M16 10a4 4 0 0 1-8 0"></path>
-            </svg>
-          </div>
-          <h3 class="text-base font-semibold text-[#111827]">Smart Shopping Concierge</h3>
-          <p class="text-xs text-[#62646A] leading-relaxed">
-            Delivers personalized product recommendations, variant comparisons, stock status updates, and 1-click cart additions.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-              <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-              <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-              <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
-            </svg>
-          </div>
-          <h3 class="text-base font-semibold text-[#111827]">1-Click Custom Branding</h3>
-          <p class="text-xs text-[#62646A] leading-relaxed">
-            Customize primary colors, header palettes, launcher icons, greeting chips, and assistant avatars to match your brand.
-          </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <h3 class="text-base font-semibold text-[#111827]">Universal Language Understanding</h3>
-          <p class="text-xs text-[#62646A] leading-relaxed">
-            Labto AI natively understands and communicates in any language, dialect, or vernacular your visitors speak with zero manual translation barriers.
-          </p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
-          </div>
-          <h3 class="text-base font-semibold text-[#111827]">Analytics & Token Usage</h3>
-          <p class="text-xs text-[#62646A] leading-relaxed">
-            Gain transparent visibility into customer inquiries, sentiment trends, popular search topics, and token usage metrics.
-          </p>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <h3 class="text-base font-semibold text-[#111827]">Enterprise Security</h3>
-          <p class="text-xs text-[#62646A] leading-relaxed">
-            Dedicated multi-tenant isolation, zero training on customer data, rate-limiting protection, and encrypted transactions.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Value Proposition -->
-    <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">04 / Value Proposition</div>
-        <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">Why Choose Labto AI?</h2>
-        <p class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed">
-          Engineered to give your visitors immediate clarity and your business measurable growth.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2">
-          <div class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide">0s Response</div>
-          <h3 class="text-base font-semibold text-[#111827]">Zero Wait Time</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            Provide instant, accurate answers 24/7 without delays or queue times, preventing customer drop-off during peak traffic.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2">
-          <div class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide">+35% Conversion</div>
-          <h3 class="text-base font-semibold text-[#111827]">Higher Checkout Rates</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            Answering pre-purchase doubts and matching exact customer needs on the spot drives higher basket sizes and sales.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2">
-          <div class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide">No-Code</div>
-          <h3 class="text-base font-semibold text-[#111827]">Effortless 1-Minute Setup</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            No complex coding required. Paste a single script tag into your website header and your assistant is immediately live.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2">
-          <div class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide">100% Grounded</div>
-          <h3 class="text-base font-semibold text-[#111827]">Zero-Hallucination Policy</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            Strict grounding algorithms ensure the AI never makes up fake discounts, return terms, or invalid promises outside your knowledge base.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: Ecosystem & Platform Support with Exact SVGs from assests -->
-    <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">05 / Ecosystem</div>
-        <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">Works with Any Tech Stack</h2>
-        <p class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed">
-          Labto AI is universal and easily implements across every major web framework, CMS, and custom application in under a minute.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
-        <!-- 1. HTML -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/html-icon.svg" alt="HTML" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">HTML</div>
-        </div>
-
-        <!-- 2. Next.js -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/nextjs-icon.svg" alt="Next.js" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">Next.js</div>
-        </div>
-
-        <!-- 3. React -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/react-svgrepo-com.svg" alt="React" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">React</div>
-        </div>
-
-        <!-- 4. Vue -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/vue-svgrepo-com.svg" alt="Vue" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">Vue</div>
-        </div>
-
-        <!-- 5. Svelte -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/svelte-svgrepo-com.svg" alt="Svelte" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">Svelte</div>
-        </div>
-
-        <!-- 6. Astro -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/astro-svgrepo-com.svg" alt="Astro" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">Astro</div>
-        </div>
-
-        <!-- 7. Shopify -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/shopify-icon.svg" alt="Shopify" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">Shopify</div>
-        </div>
-
-        <!-- 8. WordPress -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/wordpress-icon.svg" alt="WordPress" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">WordPress</div>
-        </div>
-
-        <!-- 9. PHP -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/php-programming-language-icon.svg" alt="PHP" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">PHP</div>
-        </div>
-
-        <!-- 10. Laravel -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/laravel.svg" alt="Laravel" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">Laravel</div>
-        </div>
-
-        <!-- 11. JavaScript -->
-        <div class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group">
-          <div class="w-10 h-10 flex items-center justify-center">
-            <img src="/assests/javascript-logo-svgrepo-com.svg" alt="JavaScript" class="w-8 h-8 object-contain" />
-          </div>
-          <div class="text-sm font-semibold text-[#111827]">JavaScript</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6: Mission & Vision -->
-    <section class="space-y-8 pb-4">
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">06 / Philosophy</div>
-        <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">Our Mission & Vision</h2>
-        <p class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed">
-          Building the foundational AI layer for the next decade of human-digital interaction.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 sm:p-8 rounded-md bg-white border border-[#E4E5E7] space-y-3">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <circle cx="12" cy="12" r="6"></circle>
-              <circle cx="12" cy="12" r="2"></circle>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-[#111827]">Our Mission</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            To democratize cutting-edge, human-grade conversational AI for every business owner, creator, and merchant—enabling seamless, instant customer assistance without enterprise-level overhead.
-          </p>
-        </div>
-
-        <div class="p-6 sm:p-8 rounded-md bg-white border border-[#E4E5E7] space-y-3">
-          <div class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-[#111827]">Our Vision</h3>
-          <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
-            To build a world where browsing any digital storefront or website feels as natural, helpful, and tailored as talking to an attentive in-person store expert who knows every product by heart.
-          </p>
-        </div>
-      </div>
-
-      <!-- Launch CTA Banner -->
-      <div class="mt-12 rounded-md bg-[#111827] p-8 sm:p-12 text-center text-white space-y-4">
-        <h3 class="text-2xl sm:text-3xl font-medium tracking-tight">Something Delicious is Cooking!</h3>
-        <p class="text-xs sm:text-sm text-[#9CA3AF] max-w-xl mx-auto leading-relaxed">
-          Labto AI officially opens its doors on <span class="text-white font-medium">September 1, 2026 at 12:00 PM BST</span>. Join our exclusive early access list to get launch perks.
-        </p>
-        <div class="pt-2">
-          <a href="/#subscribe-form" class="inline-flex items-center text-xs font-semibold text-white bg-[#1DBF73] hover:bg-[#17a865] px-5 py-2.5 rounded-md transition shadow-none">
-            Join the Launch Waitlist →
+        <div class="flex items-center">
+          <a
+            href="/"
+            class="text-xs font-medium text-[#62646A] hover:text-[#1DBF73] px-3 py-1.5 rounded-md border border-[#E4E5E7] bg-white transition whitespace-nowrap"
+          >
+            ← Back to Teaser
           </a>
         </div>
       </div>
-    </section>
+    </header>
 
-  </main>
+    <!-- Main Content Wrapper -->
+    <main class="w-11/12 lg:w-9/12 max-w-7xl mx-auto py-10 sm:py-14 space-y-16">
+      <!-- Hero Section -->
+      <section class="space-y-4 pb-10 border-b border-[#E4E5E7]">
+        <h1
+          class="text-2xl sm:text-3xl lg:text-4xl font-medium text-[#111827] tracking-tight leading-snug max-w-2xl"
+        >
+          Empowering Websites & E-Commerce with Autonomous AI Assistants
+        </h1>
+        <p class="text-[#62646A] text-xs sm:text-sm leading-relaxed max-w-2xl">
+          Labto AI helps online businesses and digital storefronts turn casual
+          visitors into loyal customers. Our autonomous AI copilot answers
+          inquiries accurately, recommends matching catalog items, and closes
+          sales 24/7 with zero latency.
+        </p>
 
-  <!-- Footer -->
-  <footer class="border-t border-[#E4E5E7] bg-white py-6">
-    <div class="w-11/12 lg:w-9/12 max-w-7xl mx-auto text-center text-xs text-[#74767E]">
-      <p>© 2026 Labto AI. All rights reserved. Designed for modern online businesses.</p>
-    </div>
-  </footer>
+        <!-- Key Metrics -->
+        <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5">
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1"
+          >
+            <div
+              class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]"
+            >
+              &lt; 1.2s
+            </div>
+            <div class="text-xs text-[#62646A] font-medium">
+              AI Query Latency
+            </div>
+          </div>
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1"
+          >
+            <div
+              class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]"
+            >
+              1-Min
+            </div>
+            <div class="text-xs text-[#62646A] font-medium">
+              1-Line Script Embed
+            </div>
+          </div>
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1"
+          >
+            <div
+              class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]"
+            >
+              100%
+            </div>
+            <div class="text-xs text-[#62646A] font-medium">
+              Tenant Data Privacy
+            </div>
+          </div>
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] space-y-1"
+          >
+            <div
+              class="text-2xl sm:text-3xl font-bold font-mono text-[#1DBF73]"
+            >
+              24/7
+            </div>
+            <div class="text-xs text-[#62646A] font-medium">
+              Autonomous Operation
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- Interactive Slider Script (Auto-play + Hover to Pause) -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const slider = document.getElementById('showcase-slider');
-      const slides = document.querySelectorAll('.showcase-slide');
-      const tabs = document.querySelectorAll('.tab-btn');
-      const prevBtn = document.getElementById('slider-prev');
-      const nextBtn = document.getElementById('slider-next');
+      <!-- Section 1: Overview -->
+      <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
+        <div class="space-y-2">
+          <div
+            class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider"
+          >
+            01 / Overview
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight"
+          >
+            What is Labto AI?
+          </h2>
+          <p
+            class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed"
+          >
+            Labto AI is a contextual, self-learning AI assistant built
+            specifically for modern websites, software products, and digital
+            commerce.
+          </p>
+        </div>
 
-      if (!slider || slides.length === 0) return;
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Traditional Problem -->
+          <div
+            class="p-6 sm:p-8 rounded-md bg-white border border-[#E4E5E7] space-y-3"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-rose-50 text-rose-500 flex items-center justify-center font-bold text-sm"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-[#111827]">
+              Traditional Chatbots & Keyword Search
+            </h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              Legacy chatbots rely on exact keyword matches. When visitors ask
+              nuanced questions, traditional search bars fail—forcing users to
+              sift through long documentation or wait hours for email replies.
+            </p>
+          </div>
 
-      let currentIndex = 0;
-      let timer = null;
-      const slideDuration = 3800; // 3.8s per slide
+          <!-- Labto Solution -->
+          <div
+            class="p-6 sm:p-8 rounded-md bg-white border border-[#1DBF73]/30 bg-gradient-to-br from-white to-[#1DBF73]/5 space-y-3"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center font-bold text-sm"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-[#111827]">
+              The Labto AI Solution
+            </h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              Labto AI indexes your website content, product catalog, and
+              knowledge base using advanced vector embeddings (RAG). It
+              understands real human intent, recommends products accurately, and
+              provides zero-hallucination answers in real time.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      function showSlide(index) {
-        currentIndex = (index + slides.length) % slides.length;
-        
-        slides.forEach((slide, i) => {
-          if (i === currentIndex) {
-            slide.classList.remove('hidden');
-            slide.classList.add('flex');
-          } else {
-            slide.classList.add('hidden');
-            slide.classList.remove('flex');
-          }
-        });
+      <!-- Section 2: Live Product Showcase Slider (Auto-plays, Pauses on Hover) -->
+      <section class="space-y-6 pb-12 border-b border-[#E4E5E7]">
+        <div
+          class="flex flex-col sm:flex-row sm:items-end justify-between gap-4"
+        >
+          <div class="space-y-2">
+            <div
+              class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider"
+            >
+              02 / Live Experience
+            </div>
+            <h2
+              class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight"
+            >
+              See Labto AI in Action
+            </h2>
+            <p
+              class="text-xs sm:text-sm text-[#62646A] max-w-xl leading-relaxed"
+            >
+              Explore how our autonomous AI assistant interacts, reasons, and
+              drives conversions directly on your live website. (Hover over
+              slider to pause)
+            </p>
+          </div>
 
-        tabs.forEach((tab, i) => {
-          if (i === currentIndex) {
-            tab.className = 'tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#1DBF73] bg-[#E8F8F1] text-[#1DBF73] transition cursor-pointer';
-          } else {
-            tab.className = 'tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer';
-          }
-        });
-      }
+          <!-- Slider Arrow Controls -->
+          <div class="flex items-center gap-2">
+            <button
+              id="slider-prev"
+              class="w-8 h-8 rounded-md border border-[#E4E5E7] bg-white hover:border-[#1DBF73] hover:text-[#1DBF73] text-[#62646A] flex items-center justify-center transition cursor-pointer"
+              title="Previous Slide"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button
+              id="slider-next"
+              class="w-8 h-8 rounded-md border border-[#E4E5E7] bg-white hover:border-[#1DBF73] hover:text-[#1DBF73] text-[#62646A] flex items-center justify-center transition cursor-pointer"
+              title="Next Slide"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-      function startAutoplay() {
-        if (timer) clearInterval(timer);
-        timer = setInterval(() => {
-          showSlide(currentIndex + 1);
-        }, slideDuration);
-      }
+        <!-- Quick Feature Tabs -->
+        <div class="flex flex-wrap items-center gap-2 pt-1" id="slider-tabs">
+          <button
+            data-slide="0"
+            class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#1DBF73] bg-[#E8F8F1] text-[#1DBF73] transition cursor-pointer"
+          >
+            01. Smart Onboarding
+          </button>
+          <button
+            data-slide="1"
+            class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer"
+          >
+            02. AI Reasoning & Streaming
+          </button>
+          <button
+            data-slide="2"
+            class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer"
+          >
+            03. Knowledge Grounding
+          </button>
+          <button
+            data-slide="3"
+            class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer"
+          >
+            04. Autonomous Commerce
+          </button>
+        </div>
 
-      function stopAutoplay() {
-        if (timer) {
-          clearInterval(timer);
-          timer = null;
+        <!-- Showcase Slider Container (Hover to Pause) -->
+        <div
+          id="showcase-slider"
+          class="relative overflow-hidden rounded-md bg-white border border-[#E4E5E7] p-6 sm:p-8 lg:p-10 transition"
+        >
+          <!-- Slide 1: Instant Greeting -->
+          <div
+            class="showcase-slide flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300"
+          >
+            <div class="w-full lg:w-1/2 space-y-4 text-left">
+              <div
+                class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded"
+              >
+                Feature 01 · Smart Onboarding
+              </div>
+              <h3
+                class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug"
+              >
+                Instant Greeting & Contextual Shortcuts
+              </h3>
+              <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+                Visitors receive customizable question chips the moment they
+                open chat, eliminating blank-screen hesitation and prompting
+                instant engagement.
+              </p>
+              <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span
+                    >Customizable starter question chips for your brand</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span
+                    >Zero typing required for immediate visitor
+                    interaction</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span>Instant automated greeting tailored to store tone</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center"
+            >
+              <img
+                src="/assests/showcase/showcase-greeting.png"
+                alt="Instant Greeting & Suggestion Chips"
+                class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 2: Streaming & Reasoning -->
+          <div
+            class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300"
+          >
+            <div class="w-full lg:w-1/2 space-y-4 text-left">
+              <div
+                class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded"
+              >
+                Feature 02 · Sub-Second Latency
+              </div>
+              <h3
+                class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug"
+              >
+                Real-Time Streaming & AI Reasoning
+              </h3>
+              <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+                Sub-second response streaming with visible thinking indicators
+                keeps shoppers engaged while delivering deep, intelligent
+                answers without lag.
+              </p>
+              <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span>Sub-1.2s first token latency across all queries</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span
+                    >Visible live thinking states for total transparency</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span>Smooth token-by-token conversational streaming</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center"
+            >
+              <img
+                src="/assests/showcase/showcase-reasoning.png"
+                alt="Real-Time Streaming & Reasoning"
+                class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 3: Knowledge Grounding & Smart Actions -->
+          <div
+            class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300"
+          >
+            <div class="w-full lg:w-1/2 space-y-4 text-left">
+              <div
+                class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded"
+              >
+                Feature 03 · Zero Hallucination
+              </div>
+              <h3
+                class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug"
+              >
+                Deep Knowledge Grounding & Action Links
+              </h3>
+              <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+                Grounded exclusively in your company documents and store
+                policies, providing direct clickable links to pages, contact
+                forms, and resources.
+              </p>
+              <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span
+                    >Strict policy verification with zero fake promises</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span
+                    >In-chat clickable action buttons to relevant pages</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span>Multi-turn conversational context retention</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center"
+            >
+              <img
+                src="/assests/showcase/showcase-knowledge.png"
+                alt="Deep Knowledge Grounding"
+                class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 4: In-Chat Product Options & Cart -->
+          <div
+            class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300"
+          >
+            <div class="w-full lg:w-1/2 space-y-4 text-left">
+              <div
+                class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded"
+              >
+                Feature 04 · Autonomous Commerce
+              </div>
+              <h3
+                class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug"
+              >
+                Interactive Product Modals & 1-Click Cart
+              </h3>
+              <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+                Customers can pick size, color variants, and quantity directly
+                inside the chat interface and add items straight to their
+                shopping cart.
+              </p>
+              <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span
+                    >Direct variant selector for sizes, colors, and
+                    quantity</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span>1-click cart injection without leaving the chat</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                  <span>Direct checkout boost for e-commerce conversion</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center"
+            >
+              <img
+                src="/assests/showcase/showcase-ecommerce.png"
+                alt="In-Chat Shopping & Cart"
+                class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Key Capabilities -->
+      <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
+        <div class="space-y-2">
+          <div
+            class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider"
+          >
+            03 / Capabilities
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight"
+          >
+            Key Features & Architecture
+          </h2>
+          <p
+            class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed"
+          >
+            Everything required to automate customer support, personalize
+            shopping, and scale operations without increasing headcount.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Card 1 -->
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Autonomous Knowledge Base
+            </h3>
+            <p class="text-xs text-[#62646A] leading-relaxed">
+              Syncs website URLs, PDF manuals, and FAQs to build a context-aware
+              RAG vector search database with sub-second retrieval.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Smart Shopping Concierge
+            </h3>
+            <p class="text-xs text-[#62646A] leading-relaxed">
+              Delivers personalized product recommendations, variant
+              comparisons, stock status updates, and 1-click cart additions.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              1-Click Custom Branding
+            </h3>
+            <p class="text-xs text-[#62646A] leading-relaxed">
+              Customize primary colors, header palettes, launcher icons,
+              greeting chips, and assistant avatars to match your brand.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Universal Language Understanding
+            </h3>
+            <p class="text-xs text-[#62646A] leading-relaxed">
+              Labto AI natively understands and communicates in any language,
+              dialect, or vernacular your visitors speak with zero manual
+              translation barriers.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Analytics & Token Usage
+            </h3>
+            <p class="text-xs text-[#62646A] leading-relaxed">
+              Gain transparent visibility into customer inquiries, sentiment
+              trends, popular search topics, and token usage metrics.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2.5 hover:border-[#1DBF73]/40 transition"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Enterprise Security
+            </h3>
+            <p class="text-xs text-[#62646A] leading-relaxed">
+              Dedicated multi-tenant isolation, zero training on customer data,
+              rate-limiting protection, and encrypted transactions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Value Proposition -->
+      <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
+        <div class="space-y-2">
+          <div
+            class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider"
+          >
+            04 / Value Proposition
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight"
+          >
+            Why Choose Labto AI?
+          </h2>
+          <p
+            class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed"
+          >
+            Engineered to give your visitors immediate clarity and your business
+            measurable growth.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2"
+          >
+            <div
+              class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide"
+            >
+              0s Response
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Zero Wait Time
+            </h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              Provide instant, accurate answers 24/7 without delays or queue
+              times, preventing customer drop-off during peak traffic.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2"
+          >
+            <div
+              class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide"
+            >
+              +35% Conversion
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Higher Checkout Rates
+            </h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              Answering pre-purchase doubts and matching exact customer needs on
+              the spot drives higher basket sizes and sales.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2"
+          >
+            <div
+              class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide"
+            >
+              No-Code
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Effortless 1-Minute Setup
+            </h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              No complex coding required. Paste a single script tag into your
+              website header and your assistant is immediately live.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-md bg-white border border-[#E4E5E7] space-y-2"
+          >
+            <div
+              class="text-xs font-bold text-[#1DBF73] uppercase tracking-wide"
+            >
+              100% Grounded
+            </div>
+            <h3 class="text-base font-semibold text-[#111827]">
+              Zero-Hallucination Policy
+            </h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              Strict grounding algorithms ensure the AI never makes up fake
+              discounts, return terms, or invalid promises outside your
+              knowledge base.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Ecosystem & Platform Support with Exact SVGs from assests -->
+      <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
+        <div class="space-y-2">
+          <div
+            class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider"
+          >
+            05 / Ecosystem
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight"
+          >
+            Works with Any Tech Stack
+          </h2>
+          <p
+            class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed"
+          >
+            Labto AI is universal and easily implements across every major web
+            framework, CMS, and custom application in under a minute.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5"
+        >
+          <!-- 1. HTML -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/html-icon.svg"
+                alt="HTML"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">HTML</div>
+          </div>
+
+          <!-- 2. Next.js -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/nextjs-icon.svg"
+                alt="Next.js"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">Next.js</div>
+          </div>
+
+          <!-- 3. React -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/react-svgrepo-com.svg"
+                alt="React"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">React</div>
+          </div>
+
+          <!-- 4. Vue -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/vue-svgrepo-com.svg"
+                alt="Vue"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">Vue</div>
+          </div>
+
+          <!-- 5. Svelte -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/svelte-svgrepo-com.svg"
+                alt="Svelte"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">Svelte</div>
+          </div>
+
+          <!-- 6. Astro -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/astro-svgrepo-com.svg"
+                alt="Astro"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">Astro</div>
+          </div>
+
+          <!-- 7. Shopify -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/shopify-icon.svg"
+                alt="Shopify"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">Shopify</div>
+          </div>
+
+          <!-- 8. WordPress -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/wordpress-icon.svg"
+                alt="WordPress"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">WordPress</div>
+          </div>
+
+          <!-- 9. PHP -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/php-programming-language-icon.svg"
+                alt="PHP"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">PHP</div>
+          </div>
+
+          <!-- 10. Laravel -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/laravel.svg"
+                alt="Laravel"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">Laravel</div>
+          </div>
+
+          <!-- 11. JavaScript -->
+          <div
+            class="p-4 rounded-md bg-white border border-[#E4E5E7] flex flex-col items-center text-center space-y-2.5 hover:border-[#1DBF73] transition group"
+          >
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/assests/javascript-logo-svgrepo-com.svg"
+                alt="JavaScript"
+                class="w-8 h-8 object-contain"
+              />
+            </div>
+            <div class="text-sm font-semibold text-[#111827]">JavaScript</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Mission & Vision -->
+      <section class="space-y-8 pb-4">
+        <div class="space-y-2">
+          <div
+            class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider"
+          >
+            06 / Philosophy
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight"
+          >
+            Our Mission & Vision
+          </h2>
+          <p
+            class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed"
+          >
+            Building the foundational AI layer for the next decade of
+            human-digital interaction.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="p-6 sm:p-8 rounded-md bg-white border border-[#E4E5E7] space-y-3"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-[#111827]">Our Mission</h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              To democratize cutting-edge, human-grade conversational AI for
+              every business owner, creator, and merchant—enabling seamless,
+              instant customer assistance without enterprise-level overhead.
+            </p>
+          </div>
+
+          <div
+            class="p-6 sm:p-8 rounded-md bg-white border border-[#E4E5E7] space-y-3"
+          >
+            <div
+              class="w-8 h-8 rounded-md bg-[#E8F8F1] text-[#1DBF73] flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-[#111827]">Our Vision</h3>
+            <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
+              To build a world where browsing any digital storefront or website
+              feels as natural, helpful, and tailored as talking to an attentive
+              in-person store expert who knows every product by heart.
+            </p>
+          </div>
+        </div>
+
+        <!-- Launch CTA Banner -->
+        <div
+          class="mt-12 rounded-md bg-[#111827] p-8 sm:p-12 text-center text-white space-y-4"
+        >
+          <h3 class="text-2xl sm:text-3xl font-medium tracking-tight">
+            Something Delicious is Cooking!
+          </h3>
+          <p
+            class="text-xs sm:text-sm text-[#9CA3AF] max-w-xl mx-auto leading-relaxed"
+          >
+            Labto AI officially opens its doors on
+            <span class="text-white font-medium"
+              >September 1, 2026 at 12:00 PM BST</span
+            >. Join our exclusive early access list to get launch perks.
+          </p>
+          <div class="pt-2">
+            <a
+              href="/#subscribe-form"
+              class="inline-flex items-center text-xs font-semibold text-white bg-[#1DBF73] hover:bg-[#17a865] px-5 py-2.5 rounded-md transition shadow-none"
+            >
+              Join the Launch Waitlist →
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#E4E5E7] bg-white py-6">
+      <div
+        class="w-11/12 lg:w-9/12 max-w-7xl mx-auto text-center text-xs text-[#74767E]"
+      >
+        <p>
+          © 2026 Labto AI. All rights reserved. Designed for modern online
+          businesses.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Interactive Slider Script (Auto-play + Hover to Pause) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slider = document.getElementById("showcase-slider");
+        const slides = document.querySelectorAll(".showcase-slide");
+        const tabs = document.querySelectorAll(".tab-btn");
+        const prevBtn = document.getElementById("slider-prev");
+        const nextBtn = document.getElementById("slider-next");
+
+        if (!slider || slides.length === 0) return;
+
+        let currentIndex = 0;
+        let timer = null;
+        const slideDuration = 3800; // 3.8s per slide
+
+        function showSlide(index) {
+          currentIndex = (index + slides.length) % slides.length;
+
+          slides.forEach((slide, i) => {
+            if (i === currentIndex) {
+              slide.classList.remove("hidden");
+              slide.classList.add("flex");
+            } else {
+              slide.classList.add("hidden");
+              slide.classList.remove("flex");
+            }
+          });
+
+          tabs.forEach((tab, i) => {
+            if (i === currentIndex) {
+              tab.className =
+                "tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#1DBF73] bg-[#E8F8F1] text-[#1DBF73] transition cursor-pointer";
+            } else {
+              tab.className =
+                "tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer";
+            }
+          });
         }
-      }
 
-      // Hover to pause
-      slider.addEventListener('mouseenter', stopAutoplay);
-      slider.addEventListener('mouseleave', startAutoplay);
+        function startAutoplay() {
+          if (timer) clearInterval(timer);
+          timer = setInterval(() => {
+            showSlide(currentIndex + 1);
+          }, slideDuration);
+        }
 
-      if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-          showSlide(currentIndex - 1);
+        function stopAutoplay() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        // Hover to pause
+        slider.addEventListener("mouseenter", stopAutoplay);
+        slider.addEventListener("mouseleave", startAutoplay);
+
+        if (prevBtn) {
+          prevBtn.addEventListener("click", () => {
+            showSlide(currentIndex - 1);
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "showcase_arrow_click", {
+                direction: "prev",
+              });
+            }
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener("click", () => {
+            showSlide(currentIndex + 1);
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "showcase_arrow_click", {
+                direction: "next",
+              });
+            }
+          });
+        }
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            const idx = parseInt(tab.getAttribute("data-slide"), 10);
+            showSlide(idx);
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "showcase_tab_click", {
+                tab_index: idx,
+                tab_name: tab.textContent.trim(),
+              });
+            }
+          });
         });
-      }
 
-      if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-          showSlide(currentIndex + 1);
-        });
-      }
-
-      tabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-          const idx = parseInt(tab.getAttribute('data-slide'), 10);
-          showSlide(idx);
-        });
+        showSlide(0);
+        startAutoplay();
       });
-
-      showSlide(0);
-      startAutoplay();
-    });
-  </script>
-
-</body>
+    </script>
+  </body>
 </html>

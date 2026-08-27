@@ -83,7 +83,34 @@ function showFallback(container) {
 }
 
 /* --------------------------------------------------------------------------
-   2. Subscribe Form & API Handler
+   2. UTM Parameter Parser & Storage
+   -------------------------------------------------------------------------- */
+function getUtmInfo() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const utmSource = params.get('utm_source') || params.get('source') || '';
+    const utmMedium = params.get('utm_medium') || '';
+    const utmCampaign = params.get('utm_campaign') || '';
+
+    if (utmSource) {
+      sessionStorage.setItem('labto_utm_source', utmSource);
+      if (utmMedium) sessionStorage.setItem('labto_utm_medium', utmMedium);
+      if (utmCampaign) sessionStorage.setItem('labto_utm_campaign', utmCampaign);
+      return { source: utmSource, medium: utmMedium, campaign: utmCampaign };
+    }
+
+    return {
+      source: sessionStorage.getItem('labto_utm_source') || '',
+      medium: sessionStorage.getItem('labto_utm_medium') || '',
+      campaign: sessionStorage.getItem('labto_utm_campaign') || '',
+    };
+  } catch (e) {
+    return { source: '', medium: '', campaign: '' };
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Subscribe Form & API Handler with GA4 Event Tracking
    -------------------------------------------------------------------------- */
 function initSubscribeForm() {
   const form = document.getElementById('subscribe-form');
@@ -109,6 +136,9 @@ function initSubscribeForm() {
     }
     showFeedback('', '');
 
+    const utm = getUtmInfo();
+    const sourcePayload = utm.source ? `landing-page-${utm.source}` : 'landing-page';
+
     // API Call to Labto AI Subscribe Endpoint
     fetch('https://api.labtoai.com/api/subscribe', {
       method: 'POST',
@@ -117,7 +147,9 @@ function initSubscribeForm() {
       },
       body: JSON.stringify({
         email: email,
-        source: 'landing-page'
+        source: sourcePayload,
+        utm_medium: utm.medium || undefined,
+        utm_campaign: utm.campaign || undefined
       })
     })
     .then(res => res.json())
@@ -130,6 +162,23 @@ function initSubscribeForm() {
       }
       emailInput.value = '';
       
+      // Fire Google Analytics 4 Custom Events
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          event_category: 'Lead',
+          event_label: sourcePayload,
+          traffic_source: utm.source || 'direct',
+          traffic_medium: utm.medium || 'direct',
+          traffic_campaign: utm.campaign || 'direct',
+          is_new_subscriber: !data.alreadySubscribed
+        });
+        window.gtag('event', 'waitlist_signup', {
+          event_category: 'Waitlist',
+          event_label: sourcePayload,
+          traffic_source: utm.source || 'direct'
+        });
+      }
+
       if (data.alreadySubscribed) {
         showFeedback('You are already subscribed to Labto AI updates!', 'info');
         showToast('You are already subscribed with this email!');

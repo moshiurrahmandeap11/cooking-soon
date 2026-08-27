@@ -1,117 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content" />
-  
-  <!-- Primary Meta Tags -->
-  <title>Labto AI — Something Delicious is Cooking! 🚀</title>
-  <meta name="title" content="Labto AI — Something Delicious is Cooking! 🚀" />
-  <meta name="description" content="Labto AI is the next-generation autonomous AI assistant, shopping concierge, and customer copilot for websites and online stores. Be the first to know when we launch!" />
-  <meta name="keywords" content="Labto AI, AI Chatbot, AI Website Assistant, Autonomous Shopping Concierge, AI Sales Assistant, E-Commerce AI, Business AI" />
-  <meta name="author" content="Labto AI" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://labtoai.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content"
+    />
 
-  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://labtoai.com" />
-  <meta property="og:title" content="Labto AI — Something Delicious is Cooking! 🚀" />
-  <meta property="og:description" content="Autonomous AI assistant and shopping concierge for websites and storefronts. Be the first to know when we launch!" />
-  <meta property="og:image" content="https://labtoai.com/og-image.jpg" />
-  <meta property="og:site_name" content="Labto AI" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JSX991ZJDX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Twitter / X -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://labtoai.com" />
-  <meta property="twitter:title" content="Labto AI — Something Delicious is Cooking! 🚀" />
-  <meta property="twitter:description" content="Autonomous AI assistant and shopping concierge for websites and storefronts. Be the first to know when we launch!" />
-  <meta property="twitter:image" content="https://labtoai.com/og-image.jpg" />
+      gtag("config", "G-JSX991ZJDX", {
+        send_page_view: true,
+      });
+    </script>
 
-  <!-- Favicon & App Icons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/favicon.ico" />
-  <meta name="theme-color" content="#1DBF73" />
+    <!-- Primary Meta Tags -->
+    <title>Labto AI — Something Delicious is Cooking! 🚀</title>
+    <meta
+      name="title"
+      content="Labto AI — Something Delicious is Cooking! 🚀"
+    />
+    <meta
+      name="description"
+      content="Labto AI is the next-generation autonomous AI assistant, shopping concierge, and customer copilot for websites and online stores. Be the first to know when we launch!"
+    />
+    <meta
+      name="keywords"
+      content="Labto AI, AI Chatbot, AI Website Assistant, Autonomous Shopping Concierge, AI Sales Assistant, E-Commerce AI, Business AI"
+    />
+    <meta name="author" content="Labto AI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://labtoai.com" />
 
-  <!-- Google Fonts: Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://labtoai.com" />
+    <meta
+      property="og:title"
+      content="Labto AI — Something Delicious is Cooking! 🚀"
+    />
+    <meta
+      property="og:description"
+      content="Autonomous AI assistant and shopping concierge for websites and storefronts. Be the first to know when we launch!"
+    />
+    <meta property="og:image" content="https://labtoai.com/og-image.jpg" />
+    <meta property="og:site_name" content="Labto AI" />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Fixed Countdown Timer (Normal case & font-medium numbers) -->
-  <div class="countdown-widget" id="countdown-widget">
-    <div class="countdown-label">
-      <span class="countdown-heading">Launching in</span>
-    </div>
-    <div class="countdown-timer">
-      <div class="timer-segment">
-        <span class="timer-number" id="cd-days">00</span>
-        <span class="timer-unit">Days</span>
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://labtoai.com" />
+    <meta
+      property="twitter:title"
+      content="Labto AI — Something Delicious is Cooking! 🚀"
+    />
+    <meta
+      property="twitter:description"
+      content="Autonomous AI assistant and shopping concierge for websites and storefronts. Be the first to know when we launch!"
+    />
+    <meta property="twitter:image" content="https://labtoai.com/og-image.jpg" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <meta name="theme-color" content="#1DBF73" />
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fixed Countdown Timer (Normal case & font-medium numbers) -->
+    <div class="countdown-widget" id="countdown-widget">
+      <div class="countdown-label">
+        <span class="countdown-heading">Launching in</span>
       </div>
-      <span class="timer-divider">:</span>
-      <div class="timer-segment">
-        <span class="timer-number" id="cd-hours">00</span>
-        <span class="timer-unit">Hours</span>
-      </div>
-      <span class="timer-divider">:</span>
-      <div class="timer-segment">
-        <span class="timer-number" id="cd-mins">00</span>
-        <span class="timer-unit">Mins</span>
-      </div>
-      <span class="timer-divider">:</span>
-      <div class="timer-segment">
-        <span class="timer-number" id="cd-secs">00</span>
-        <span class="timer-unit">Secs</span>
-      </div>
-    </div>
-  </div>
-
-  <main class="coming-soon-container">
-    
-    <!-- Glowing Emerald Radial Aura -->
-    <div class="arch-glow"></div>
-
-    <!-- Arch Dome Card -->
-    <div class="arch-dome">
-      <!-- Animated Lottie Logo -->
-      <div class="lottie-wrapper">
-        <div id="lottie-container" class="lottie-box"></div>
-      </div>
-
-      <!-- Sweet & Friendly Headline -->
-      <h1 class="arch-title">Something delicious is cooking!</h1>
-
-      <!-- Friendly Description -->
-      <p class="arch-description">
-        Be the first to know when our Labto AI opens the kitchen!
-      </p>
-
-      <!-- Email Notification Form -->
-      <form id="subscribe-form" class="subscribe-box">
-        <div class="input-wrapper">
-          <input type="email" id="email-input" placeholder="Enter your email..." required />
-          <button type="submit" class="notify-btn">Notify Me</button>
+      <div class="countdown-timer">
+        <div class="timer-segment">
+          <span class="timer-number" id="cd-days">00</span>
+          <span class="timer-unit">Days</span>
         </div>
-        <div id="form-feedback" class="feedback-msg"></div>
-      </form>
+        <span class="timer-divider">:</span>
+        <div class="timer-segment">
+          <span class="timer-number" id="cd-hours">00</span>
+          <span class="timer-unit">Hours</span>
+        </div>
+        <span class="timer-divider">:</span>
+        <div class="timer-segment">
+          <span class="timer-number" id="cd-mins">00</span>
+          <span class="timer-unit">Mins</span>
+        </div>
+        <span class="timer-divider">:</span>
+        <div class="timer-segment">
+          <span class="timer-number" id="cd-secs">00</span>
+          <span class="timer-unit">Secs</span>
+        </div>
+      </div>
     </div>
 
-  </main>
+    <main class="coming-soon-container">
+      <!-- Glowing Emerald Radial Aura -->
+      <div class="arch-glow"></div>
 
-  <!-- Bottom Right "About Labto AI" Button -->
-  <a href="/about" class="about-floating-btn" title="Discover Labto AI">
-    <span>About Labto AI</span>
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M7 17l9.2-9.2M17 17V8H8"/>
-    </svg>
-  </a>
+      <!-- Arch Dome Card -->
+      <div class="arch-dome">
+        <!-- Animated Lottie Logo -->
+        <div class="lottie-wrapper">
+          <div id="lottie-container" class="lottie-box"></div>
+        </div>
 
-  <!-- Lottie Player Web Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-  <script src="script.js"></script>
-</body>
+        <!-- Sweet & Friendly Headline -->
+        <h1 class="arch-title">Something delicious is cooking!</h1>
+
+        <!-- Friendly Description -->
+        <p class="arch-description">
+          Be the first to know when our Labto AI opens the kitchen!
+        </p>
+
+        <!-- Email Notification Form -->
+        <form id="subscribe-form" class="subscribe-box">
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Enter your email..."
+              required
+            />
+            <button type="submit" class="notify-btn">Notify Me</button>
+          </div>
+          <div id="form-feedback" class="feedback-msg"></div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Bottom Right "About Labto AI" Button -->
+    <a href="/about" class="about-floating-btn" title="Discover Labto AI">
+      <span>About Labto AI</span>
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M7 17l9.2-9.2M17 17V8H8" />
+      </svg>
+    </a>
+
+    <!-- Lottie Player Web Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
