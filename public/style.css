@@ -298,11 +298,49 @@ html, body {
 }
 
 /* --------------------------------------------------------------------------
+   Bottom Right "About Labto AI" Floating Button
+   -------------------------------------------------------------------------- */
+.about-floating-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #FFFFFF;
+  color: #222325;
+  border: 1px solid #E4E5E7;
+  border-radius: 6px;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.about-floating-btn:hover {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+  transform: translateY(-1px);
+}
+
+.about-floating-btn svg {
+  color: var(--brand-primary);
+  transition: transform 0.2s ease;
+}
+
+.about-floating-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* --------------------------------------------------------------------------
    Mobile & Tablet Responsive
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   body {
-    padding: 4.5rem 1rem 1.5rem 1rem;
+    padding: 4.5rem 1rem 4rem 1rem;
     justify-content: center;
   }
 
@@ -363,6 +401,19 @@ html, body {
 
   .subscribe-box {
     max-width: 100%;
+  }
+
+  .about-floating-btn {
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 0.45rem 0.85rem;
+    font-size: 0.78rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .about-floating-btn:hover {
+    transform: translateX(50%) translateY(-1px);
   }
 }
 
