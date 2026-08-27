@@ -142,79 +142,172 @@
       </div>
     </section>
 
-    <!-- Section 2: Live Product Showcase (High Impact Client Showcase) -->
-    <section class="space-y-8 pb-12 border-b border-[#E4E5E7]">
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">02 / Live Experience</div>
-        <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">See Labto AI in Action</h2>
-        <p class="text-xs sm:text-sm text-[#62646A] max-w-2xl leading-relaxed">
-          Explore how our autonomous AI assistant interacts, reasons, and drives conversions directly on your live website.
-        </p>
+    <!-- Section 2: Live Product Showcase Slider (Auto-plays, Pauses on Hover) -->
+    <section class="space-y-6 pb-12 border-b border-[#E4E5E7]">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div class="space-y-2">
+          <div class="text-xs font-semibold text-[#1DBF73] uppercase tracking-wider">02 / Live Experience</div>
+          <h2 class="text-2xl sm:text-3xl font-medium text-[#111827] tracking-tight">See Labto AI in Action</h2>
+          <p class="text-xs sm:text-sm text-[#62646A] max-w-xl leading-relaxed">
+            Explore how our autonomous AI assistant interacts, reasons, and drives conversions directly on your live website. (Hover over slider to pause)
+          </p>
+        </div>
+
+        <!-- Slider Arrow Controls -->
+        <div class="flex items-center gap-2">
+          <button id="slider-prev" class="w-8 h-8 rounded-md border border-[#E4E5E7] bg-white hover:border-[#1DBF73] hover:text-[#1DBF73] text-[#62646A] flex items-center justify-center transition cursor-pointer" title="Previous Slide">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button id="slider-next" class="w-8 h-8 rounded-md border border-[#E4E5E7] bg-white hover:border-[#1DBF73] hover:text-[#1DBF73] text-[#62646A] flex items-center justify-center transition cursor-pointer" title="Next Slide">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <!-- Quick Feature Tabs -->
+      <div class="flex flex-wrap items-center gap-2 pt-1" id="slider-tabs">
+        <button data-slide="0" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#1DBF73] bg-[#E8F8F1] text-[#1DBF73] transition cursor-pointer">
+          01. Smart Onboarding
+        </button>
+        <button data-slide="1" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer">
+          02. AI Reasoning & Streaming
+        </button>
+        <button data-slide="2" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer">
+          03. Knowledge Grounding
+        </button>
+        <button data-slide="3" class="tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer">
+          04. Autonomous Commerce
+        </button>
+      </div>
+
+      <!-- Showcase Slider Container (Hover to Pause) -->
+      <div id="showcase-slider" class="relative overflow-hidden rounded-md bg-white border border-[#E4E5E7] p-6 sm:p-8 lg:p-10 transition">
         
-        <!-- Showcase 1: Instant Greeting -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] flex flex-col justify-between space-y-4 hover:border-[#1DBF73]/40 transition group">
-          <div class="space-y-2">
+        <!-- Slide 1: Instant Greeting -->
+        <div class="showcase-slide flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
+          <div class="w-full lg:w-1/2 space-y-4 text-left">
             <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
               Feature 01 · Smart Onboarding
             </div>
-            <h3 class="text-base sm:text-lg font-semibold text-[#111827]">Instant Greeting & Contextual Shortcuts</h3>
+            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
+              Instant Greeting & Contextual Shortcuts
+            </h3>
             <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
               Visitors receive customizable question chips the moment they open chat, eliminating blank-screen hesitation and prompting instant engagement.
             </p>
+            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Customizable starter question chips for your brand</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Zero typing required for immediate visitor interaction</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Instant automated greeting tailored to store tone</span>
+              </div>
+            </div>
           </div>
-          <div class="w-full bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-greeting.png" alt="Instant Greeting & Suggestion Chips" class="w-full max-w-[280px] sm:max-w-[300px] rounded-md shadow-xs object-contain group-hover:scale-[1.02] transition duration-200" />
+          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
+            <img src="/assests/showcase/showcase-greeting.png" alt="Instant Greeting & Suggestion Chips" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
           </div>
         </div>
 
-        <!-- Showcase 2: Streaming & Reasoning -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] flex flex-col justify-between space-y-4 hover:border-[#1DBF73]/40 transition group">
-          <div class="space-y-2">
+        <!-- Slide 2: Streaming & Reasoning -->
+        <div class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
+          <div class="w-full lg:w-1/2 space-y-4 text-left">
             <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
               Feature 02 · Sub-Second Latency
             </div>
-            <h3 class="text-base sm:text-lg font-semibold text-[#111827]">Real-Time Streaming & AI Reasoning</h3>
+            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
+              Real-Time Streaming & AI Reasoning
+            </h3>
             <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
               Sub-second response streaming with visible thinking indicators keeps shoppers engaged while delivering deep, intelligent answers without lag.
             </p>
+            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Sub-1.2s first token latency across all queries</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Visible live thinking states for total transparency</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Smooth token-by-token conversational streaming</span>
+              </div>
+            </div>
           </div>
-          <div class="w-full bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-reasoning.png" alt="Real-Time Streaming and Reasoning" class="w-full max-w-[280px] sm:max-w-[300px] rounded-md shadow-xs object-contain group-hover:scale-[1.02] transition duration-200" />
+          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
+            <img src="/assests/showcase/showcase-reasoning.png" alt="Real-Time Streaming & Reasoning" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
           </div>
         </div>
 
-        <!-- Showcase 3: Knowledge Grounding & Smart Actions -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] flex flex-col justify-between space-y-4 hover:border-[#1DBF73]/40 transition group">
-          <div class="space-y-2">
+        <!-- Slide 3: Knowledge Grounding & Smart Actions -->
+        <div class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
+          <div class="w-full lg:w-1/2 space-y-4 text-left">
             <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
               Feature 03 · Zero Hallucination
             </div>
-            <h3 class="text-base sm:text-lg font-semibold text-[#111827]">Deep Knowledge Grounding & Action Links</h3>
+            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
+              Deep Knowledge Grounding & Action Links
+            </h3>
             <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
               Grounded exclusively in your company documents and store policies, providing direct clickable links to pages, contact forms, and resources.
             </p>
+            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Strict policy verification with zero fake promises</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>In-chat clickable action buttons to relevant pages</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Multi-turn conversational context retention</span>
+              </div>
+            </div>
           </div>
-          <div class="w-full bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-knowledge.png" alt="Deep Knowledge Grounding" class="w-full max-w-[280px] sm:max-w-[300px] rounded-md shadow-xs object-contain group-hover:scale-[1.02] transition duration-200" />
+          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
+            <img src="/assests/showcase/showcase-knowledge.png" alt="Deep Knowledge Grounding" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
           </div>
         </div>
 
-        <!-- Showcase 4: In-Chat Product Options & Cart -->
-        <div class="p-6 rounded-md bg-white border border-[#E4E5E7] flex flex-col justify-between space-y-4 hover:border-[#1DBF73]/40 transition group">
-          <div class="space-y-2">
+        <!-- Slide 4: In-Chat Product Options & Cart -->
+        <div class="showcase-slide hidden flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition duration-300">
+          <div class="w-full lg:w-1/2 space-y-4 text-left">
             <div class="inline-flex items-center text-[10px] font-semibold text-[#1DBF73] bg-[#E8F8F1] px-2.5 py-0.5 rounded">
               Feature 04 · Autonomous Commerce
             </div>
-            <h3 class="text-base sm:text-lg font-semibold text-[#111827]">Interactive Product Modals & 1-Click Cart</h3>
+            <h3 class="text-xl sm:text-2xl font-semibold text-[#111827] leading-snug">
+              Interactive Product Modals & 1-Click Cart
+            </h3>
             <p class="text-xs sm:text-sm text-[#62646A] leading-relaxed">
               Customers can pick size, color variants, and quantity directly inside the chat interface and add items straight to their shopping cart.
             </p>
+            <div class="space-y-2 pt-2 text-xs text-[#4B5563]">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Direct variant selector for sizes, colors, and quantity</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>1-click cart injection without leaving the chat</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+                <span>Direct checkout boost for e-commerce conversion</span>
+              </div>
+            </div>
           </div>
-          <div class="w-full bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 flex items-center justify-center">
-            <img src="/assests/showcase/showcase-ecommerce.png" alt="Interactive In-Chat Shopping Modal" class="w-full max-w-[280px] sm:max-w-[300px] rounded-md shadow-xs object-contain group-hover:scale-[1.02] transition duration-200" />
+          <div class="w-full lg:w-1/2 bg-[#F8FAFC] border border-[#E4E5E7] rounded-md p-4 sm:p-6 flex items-center justify-center">
+            <img src="/assests/showcase/showcase-ecommerce.png" alt="In-Chat Shopping & Cart" class="w-full max-w-[280px] sm:max-w-[320px] rounded-md shadow-xs object-contain" />
           </div>
         </div>
 
@@ -532,6 +625,85 @@
       <p>© 2026 Labto AI. All rights reserved. Designed for modern online businesses.</p>
     </div>
   </footer>
+
+  <!-- Interactive Slider Script (Auto-play + Hover to Pause) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('showcase-slider');
+      const slides = document.querySelectorAll('.showcase-slide');
+      const tabs = document.querySelectorAll('.tab-btn');
+      const prevBtn = document.getElementById('slider-prev');
+      const nextBtn = document.getElementById('slider-next');
+
+      if (!slider || slides.length === 0) return;
+
+      let currentIndex = 0;
+      let timer = null;
+      const slideDuration = 3800; // 3.8s per slide
+
+      function showSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        
+        slides.forEach((slide, i) => {
+          if (i === currentIndex) {
+            slide.classList.remove('hidden');
+            slide.classList.add('flex');
+          } else {
+            slide.classList.add('hidden');
+            slide.classList.remove('flex');
+          }
+        });
+
+        tabs.forEach((tab, i) => {
+          if (i === currentIndex) {
+            tab.className = 'tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#1DBF73] bg-[#E8F8F1] text-[#1DBF73] transition cursor-pointer';
+          } else {
+            tab.className = 'tab-btn px-3 py-1.5 rounded-md text-xs font-medium border border-[#E4E5E7] bg-white text-[#62646A] hover:border-[#1DBF73] transition cursor-pointer';
+          }
+        });
+      }
+
+      function startAutoplay() {
+        if (timer) clearInterval(timer);
+        timer = setInterval(() => {
+          showSlide(currentIndex + 1);
+        }, slideDuration);
+      }
+
+      function stopAutoplay() {
+        if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      }
+
+      // Hover to pause
+      slider.addEventListener('mouseenter', stopAutoplay);
+      slider.addEventListener('mouseleave', startAutoplay);
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          showSlide(currentIndex - 1);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          showSlide(currentIndex + 1);
+        });
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const idx = parseInt(tab.getAttribute('data-slide'), 10);
+          showSlide(idx);
+        });
+      });
+
+      showSlide(0);
+      startAutoplay();
+    });
+  </script>
 
 </body>
 </html>
